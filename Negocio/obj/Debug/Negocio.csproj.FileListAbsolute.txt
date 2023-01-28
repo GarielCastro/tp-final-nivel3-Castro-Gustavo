@@ -1,0 +1,9 @@
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\bin\Debug\Negocio.dll
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\bin\Debug\Negocio.pdb
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\bin\Debug\Modelo.dll
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\bin\Debug\Modelo.pdb
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\obj\Debug\Negocio.dll
+C:\Users\acpc\source\repos\CastroGustavoAriel_TPFinal\Negocio\obj\Debug\Negocio.pdb
