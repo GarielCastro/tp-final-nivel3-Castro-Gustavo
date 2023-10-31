@@ -19,7 +19,7 @@ namespace Negocio
         }
         public AccesoaDatos()
         {
-            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=CATALOGO_DB; integrated security=true");
+            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=ACCESORIO_DB; integrated security=true");
         }
         public void setearConsulta(string consulta)
         {

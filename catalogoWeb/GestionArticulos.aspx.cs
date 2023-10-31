@@ -17,10 +17,11 @@ namespace catalogoWeb
             MarcaNegocio marcaNegocio = new MarcaNegocio();
             try
             {
-                if (!IsPostBack+)
+                if (!IsPostBack)
                 {
                     List<Articulo> listaArticulo = negocio.listarconSP();
-                    Session["listaArticulo"] = listaArticulo;
+                    //Session["listaArticulo"] = listaArticulo;
+                    Session.Add("listaArticulo", listaArticulo);
 
                     List<Marca> listaMarca = marcaNegocio.listar();
                     ddlMarca.DataSource = listaMarca;
@@ -31,13 +32,14 @@ namespace catalogoWeb
             catch (Exception ex)
             {
 
-                throw ex;
+                Session.Add("error", ex.ToString());
+                Response.Redirect("error.aspx", false);
             }
-            Articulo nuevo = new Articulo();
-            nuevo.Codigo = txtCodigo.Text;
-            nuevo.Descripcion = txtDescripcion.Text;
-            nuevo.Marca.Id = ddlMarca.SelectedIndex;
-            negocio.agregar(nuevo);
+            //Articulo nuevo = new Articulo();
+            //nuevo.Codigo = txtCodigo.Text;
+            //nuevo.Descripcion = txtDescripcion.Text;
+            //nuevo.Marca.Id = ddlMarca.SelectedIndex;
+            //negocio.agregarConSP(nuevo);
 
 
         }
