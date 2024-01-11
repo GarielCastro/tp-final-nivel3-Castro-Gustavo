@@ -47,6 +47,7 @@ namespace catalogoWeb
                     txtImagenrl.Text = seleccionado.UrlImagen;
                     ddlMarca.SelectedValue = seleccionado.Marca.Id.ToString();
                     ddlCategoria.SelectedValue = seleccionado.Categoria.Id.ToString();
+                    txtPrecio.Text = seleccionado.Precio.ToString();
                     txtImagenrl_TextChanged(sender, e);
                     //ddlMarca.SelectedIndex = ddlMarca.Items.IndexOf(ddlMarca.Items.FindByValue(seleccionado.Marca.Id.ToString()));
                 }
@@ -125,6 +126,11 @@ namespace catalogoWeb
                 Session.Add("error", ex);
                 Response.Redirect("error.aspx", false);
             }
+        }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Listado.aspx", false);
         }
     }
 }

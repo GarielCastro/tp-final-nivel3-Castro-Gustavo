@@ -22,9 +22,12 @@ namespace catalogoWeb
                 {
                     Usuario user = (Usuario)Session["usuario"];
                     lblUser.Text = user.Correo;
+                    bool admin = (bool)Session["admin"];
+
                     if (!string.IsNullOrEmpty(user.imagenPerfil))
                         imgAvatar.ImageUrl = "~/Images/" + user.imagenPerfil;
-                    else imgAvatar.ImageUrl = "https://www.palomacornejo.com/wp-content/uploads/2021/08/no-image.jpg";
+                    else 
+                        imgAvatar.ImageUrl = "https://www.palomacornejo.com/wp-content/uploads/2021/08/no-image.jpg";
 
                 }
             }

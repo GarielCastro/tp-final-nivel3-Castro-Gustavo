@@ -24,6 +24,15 @@ namespace catalogoWeb
         protected global::System.Web.UI.WebControls.TextBox txtCodigo;
 
         /// <summary>
+        /// txtNombre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+
+        /// <summary>
         /// txtDescripcion control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace catalogoWeb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
+
+        /// <summary>
+        /// ddlCategoria control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategoria;
 
         /// <summary>
         /// ddlMarca control.
@@ -51,22 +69,13 @@ namespace catalogoWeb
         protected global::System.Web.UI.WebControls.DropDownList ddlCategoriaFiltrados;
 
         /// <summary>
-        /// lblMarca control.
+        /// txtImagen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lblMarca;
-
-        /// <summary>
-        /// lblUrlImagen control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lblUrlImagen;
+        protected global::System.Web.UI.WebControls.TextBox txtImagen;
 
         /// <summary>
         /// lblPrecio control.

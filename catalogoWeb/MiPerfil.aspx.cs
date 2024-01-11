@@ -44,6 +44,10 @@ namespace catalogoWeb
         {
             try
             {
+                Page.Validate();
+                if (!Page.IsValid)
+                    return;
+
                 UsuarioNegocio negocio = new UsuarioNegocio();
                 Usuario userModificado = (Usuario)Session["usuario"];
 

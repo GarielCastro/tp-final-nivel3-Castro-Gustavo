@@ -4,34 +4,33 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-   <%-- <asp:UpdatePanel runat="server">
-        <ContentTemplate>--%>
+ <asp:UpdatePanel runat="server">
+        <ContentTemplate>
             <div class="row">
                 <div class="col-6">
                     <div class="col-3">
                         <label for="txtCodigo" class="form-label">Codigo</label>
                         <asp:TextBox runat="server" ID="txtCodigo" CssClass="form-control" />
                     </div>
+                    <div class="mb-3">
+                <label for="txtNombre" class="form-label">Nombre: </label>
+                <asp:TextBox runat="server" ID="txtNombre" CssClass="form-control" />
+            </div>
                     <div class="col-3">
                         <label for="lblDescripcion" class="form-label">Descripcion</label>
                         <asp:TextBox runat="server" ID="txtDescripcion" CssClass="form-control" />
                     </div>
                     <div class="col-3">
-                        <%--                <label for="lblCategoria" class="form-label">Categoria</label>
+                                        <label for="lblCategoria" class="form-label">Categoria</label>
                 <asp:DropDownList ID="ddlCategoria" runat="server" CssClass="form-select">
                     <asp:ListItem Text="text1" />
                     <asp:ListItem Text="text2" />
-                </asp:DropDownList>--%>
+                </asp:DropDownList>
                     </div>
                     <div class="col">
                         <asp:Label Text="Marca" runat="server" />
-                        <asp:DropDownList runat="server" ID="ddlMarca" CssClass="btn btn-outline-dark dropdown-toggle" 
-                            AutoPostBack="false" OnSelectedIndexChanged="ddlMarca_SelectedIndexChanged1">
-                            <asp:ListItem Text="text1" />
-                            <asp:ListItem Text="text2" />
+                        <asp:DropDownList runat="server" ID="ddlMarca" CssClass="btn btn-outline-dark dropdown-toggle" AutoPostBack="true" >
                         </asp:DropDownList>
-<%--                        <asp:DropDownList runat="server" ID="ddlMarca" CssClass="btn btn-outline-dark dropdown-toggle" AutoPostBack="true" OnSelectedIndexChanged="ddlMarca_SelectedIndexChanged">
-                        </asp:DropDownList>--%>
                     </div>
                     <div class="col">
                         <asp:Label Text="Categoria" runat="server" />
@@ -40,20 +39,17 @@
                     </div>
                 </div>
 
-                <div class="col-3">
-                    <label for="lblMarca" class="form-label">Marca</label>
-                    <asp:TextBox runat="server" ID="lblMarca" CssClass="form-control" />
                 </div>
                 <div class="col-3">
-                    <label for="lblUrlImagen" class="form-label">Url de la Imagen</label>
-                    <asp:TextBox runat="server" ID="lblUrlImagen" CssClass="form-control" />
+                    <label for="txtImagen" class="form-label">Url de la Imagen</label>
+                    <asp:TextBox runat="server" ID="txtImagen" CssClass="form-control" AutoPostBack ="true" OnTextChanged="txtImagen_TextChanged" />
                 </div>
                 <div class="col-3">
                     <label for="lblPrecio" class="form-label">Precio</label>
                     <asp:TextBox runat="server" ID="lblPrecio" CssClass="form-control" />
                 </div>
             </div>
-            <%--</div>--%>
-<%--        </ContentTemplate>
-    </asp:UpdatePanel>--%>
+            </div>
+       </ContentTemplate>
+    </asp:UpdatePanel>
 </asp:Content>

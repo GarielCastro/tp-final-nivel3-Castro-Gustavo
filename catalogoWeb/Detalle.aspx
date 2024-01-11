@@ -4,8 +4,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Detalle del ariculo</h1>
-    <div class="card-body">
-        <h5 class="card-title"><%#Eval("Nombre")%></h5>
-        <p class="card-text"><%#Eval("Descripcion")%></p>
+    <div class="row">
+ <form class="row g-2">
+       
+            <div class="col-auto">
+                <div class="mb-3 row">
+                </div>
+                <div class="mb-3 row">
+                <asp:Label Text="Nombre" CssClass="form-label" ID="lblNombre" Font-Size="XX-Large" runat="server" />
+                </div>
+                <div class="mb-3 row">
+                <asp:Label Text="Descripción" CssClass="form-label" ID="lblDescripcion" Font-Size="XX-Large" runat="server" />
+                </div>
+                <div class="mb-3 row">
+                <asp:Label Text="Código" CssClass="form-label" ID="lblCodigo" Font-Size="XX-Large" runat="server" />
+                </div>
+                <div class="mb-3 row">
+                <asp:Label Text="Precio" CssClass="form-label" ID="lblPrecio" Font-Size="XX-Large" runat="server" />
+                </div>
+            </div>
+            <div class="col-auto"
+                <%--<img src="..." class="img-fluid" alt="Imagen del artículo">--%>
+                <div>
+                    <asp:Image ImageUrl="imageurl" ID="imgDetalle" runat="server" CssClass="rounded mx-auto d-block" />
+                </div>
+            </div>
+ </form>       
     </div>
 </asp:Content>

@@ -16,24 +16,28 @@
                 <asp:TextBox runat="server" ID="txtNombre" CssClass="form-control" />
             </div>
             <div class="mb-3">
-                <label for="ddlMarca" class="form-label">Marca: </label>
-                <asp:DropDownList CssClass="btn btn-outline-dark dropdown-toggle" ID="ddlMarca" runat="server">           
-                </asp:DropDownList>
-            </div>            <div class="mb-3">
-                <label for="ddlCategoria" class="form-label">Categoria: </label>
-                <asp:DropDownList CssClass="btn btn-outline-dark dropdown-toggle" ID="ddlCategoria" runat="server">           
-                </asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <asp:Button Text="Aceptar" ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" />
-            </div>
-        </div>
-
-        <div class="col-6">
-            <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripción: </label>
                 <asp:TextBox runat="server" ID="txtDescripcion" CssClass="form-control" />
             </div>
+            <div class="mb-3">
+                <label for="ddlMarca" class="form-label">Marca: </label>
+                <asp:DropDownList CssClass="btn btn-outline-dark dropdown-toggle" ID="ddlMarca" runat="server">
+                </asp:DropDownList>
+            </div>
+            <div class="mb-3">
+                <label for="ddlCategoria" class="form-label">Categoria: </label>
+                <asp:DropDownList CssClass="btn btn-outline-dark dropdown-toggle" ID="ddlCategoria" runat="server">
+                </asp:DropDownList>
+            </div>
+            <div class="col-3">
+                <label for="lblPrecio" class="form-label">Precio</label>
+                <asp:TextBox runat="server" ID="txtPrecio" CssClass="form-control" />
+            </div>
+
+        </div>
+
+        <div class="col-6">
+
 
             <asp:UpdatePanel runat="server">
                 <ContentTemplate>
@@ -47,23 +51,30 @@
             </asp:UpdatePanel>
         </div>
     </div>
-    <div class="row">
         <div class="col-6">
-            <asp:UpdatePanel runat="server">
-                <ContentTemplate>
-                    <div class="mb-3">
-                        <asp:Button Text="Eliminar" ID="btnEliminar" CssClass="btn btn-danger" OnClick="btnEliminar_Click" runat="server" />
-                    </div>
-                    <%if (ConfirmaEliminacion)
-                        { %>
-                    <div class="mb-3">
-                        <asp:CheckBox Text="Confirme eliminacion, no hay vuelta atras!" ID="chkConfirmaEliminar" runat="server" />
-                        <asp:Button Text="Eliminar" ID="btnConfirmaEliminar" CssClass="btn btn-outline-danger" OnClick="btnConfirmaEliminar_Click" runat="server" />
-                    </div>
-                    <%} %>  
-                </ContentTemplate>
-            </asp:UpdatePanel>
+            <div class="mb-3">
+                <asp:Button Text="Aceptar" ID="Button1" CssClass="btn btn-success" OnClick="btnAceptar_Click" runat="server" />
+                <asp:Button Text="Cancelar" ID="btnCancelar" CssClass="btn btn-success" OnClick="btnCancelar_Click" runat="server" />
+            </div>
+            <div class="col-6">
+                <asp:UpdatePanel runat="server">
+                    <ContentTemplate>
+                        <div class="mb-3">
+                            <asp:Button Text="Eliminar" ID="btnEliminar" CssClass="btn btn-danger" OnClick="btnEliminar_Click" runat="server" />
+                        </div>
+                        <%if (ConfirmaEliminacion)
+                            { %>
+                        <div class="mb-3">
+                            <asp:CheckBox Text="Confirme eliminacion, no hay vuelta atras!" ID="chkConfirmaEliminar" runat="server" />
+                            <asp:Button Text="Eliminar" ID="btnConfirmaEliminar" CssClass="btn btn-outline-danger" OnClick="btnConfirmaEliminar_Click" runat="server" />
+                        </div>
+                        <%} %>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
         </div>
+    <div class="row">
+
     </div>
 
 </asp:Content>

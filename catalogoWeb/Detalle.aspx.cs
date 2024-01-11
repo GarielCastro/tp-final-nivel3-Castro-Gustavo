@@ -14,16 +14,18 @@ namespace catalogoWeb
         public List<Articulo> ListaArticulo { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            string id = Request.QueryString["id"].ToString();
             ArticuloNegocio negocio = new ArticuloNegocio();
-            ListaArticulo = negocio.listarconSP();
+            ListaArticulo = negocio.listar(id);
             try
             {
-                if (!IsPostBack)
-                {
-                    //    repRepetidor.DataSource = ListaArticulo;
-                    //  repRepetidor.DataBind();
+                Articulo enDetalle = ListaArticulo[0];
+                imgDetalle.ImageUrl = enDetalle.UrlImagen;
+                lblNombre.Text = enDetalle.Nombre;
+                lblDescripcion.Text =  enDetalle.Descripcion;
+                lblCodigo.Text = enDetalle.Codigo;
+                lblPrecio.Text = enDetalle.Precio.ToString();
 
-                }
             }
             catch (Exception ex)
             {

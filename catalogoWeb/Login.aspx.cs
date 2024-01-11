@@ -34,8 +34,8 @@ namespace catalogoWeb
                 if (negocio.Loguear(usuario))
                 {
                     Session.Add("usuario", usuario);
-                    if (negocio.isAdmin(usuario))
-                        Session.Add("admin", true);
+                    bool admin = negocio.isAdmin(usuario);
+                    Session.Add("admin", admin);
                     Response.Redirect("Home.aspx", false);
                 }
                 else
@@ -45,7 +45,7 @@ namespace catalogoWeb
                 }
 
             }
-
+           // catch (System.Threading.ThreadAbortException ex) { }
             catch (Exception ex)
             {
                 if (!(ex is ThreadAbortException))
