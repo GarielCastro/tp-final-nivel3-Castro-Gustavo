@@ -75,7 +75,7 @@
             <asp:Button Text="Aceptar" ID="btnAceptar" CssClass="btn btn-primary" OnClientClick="return validar()" OnClick="btnAceptar_Click" runat="server" />
         </div>
     </div>
-    <a href="Default.aspx">Cancelar</a>
+    <a href="Home.aspx">Cancelar</a>
     <div class="col-6">
     </div>
 

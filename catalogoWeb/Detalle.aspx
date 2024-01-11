@@ -24,10 +24,10 @@
                 </div>
             </div>
             <div class="col-auto"
-                <%--<img src="..." class="img-fluid" alt="Imagen del artículo">--%>
                 <div>
                     <asp:Image ImageUrl="imageurl" ID="imgDetalle" runat="server" CssClass="rounded mx-auto d-block" />
                 </div>
+                <asp:Button Text="Favorito" ID="btnFavorito" OnClick="btnFavorito_Click" runat="server" />
             </div>
  </form>       
     </div>

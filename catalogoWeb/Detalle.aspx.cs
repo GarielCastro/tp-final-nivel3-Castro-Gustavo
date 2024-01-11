@@ -35,5 +35,10 @@ namespace catalogoWeb
             }
 
         }
+
+        protected void btnFavorito_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

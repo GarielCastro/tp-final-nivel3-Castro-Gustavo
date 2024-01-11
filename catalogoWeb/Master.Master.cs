@@ -22,7 +22,12 @@ namespace catalogoWeb
                 {
                     Usuario user = (Usuario)Session["usuario"];
                     lblUser.Text = user.Correo;
-                    bool admin = (bool)Session["admin"];
+                    List<Articulo> favoritos = new List<Articulo>();
+                    Session.Add("favoritos", favoritos);
+                    if (Session["admin"] != null)
+                    {
+                        bool admin = (bool)Session["admin"];
+                    }
 
                     if (!string.IsNullOrEmpty(user.imagenPerfil))
                         imgAvatar.ImageUrl = "~/Images/" + user.imagenPerfil;
