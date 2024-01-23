@@ -22,10 +22,10 @@ namespace catalogoWeb
                 Articulo enDetalle = ListaArticulo[0];
                 imgDetalle.ImageUrl = enDetalle.UrlImagen;
                 lblNombre.Text = enDetalle.Nombre;
-                lblDescripcion.Text =  enDetalle.Descripcion;
+                lblDescripcion.Text = enDetalle.Descripcion;
                 lblCodigo.Text = enDetalle.Codigo;
                 lblPrecio.Text = enDetalle.Precio.ToString();
-
+                Session.Add("enDetalle", enDetalle);
             }
             catch (Exception ex)
             {
@@ -38,7 +38,9 @@ namespace catalogoWeb
 
         protected void btnFavorito_Click(object sender, EventArgs e)
         {
-            
+            List<Articulo> listaFav = (List<Articulo>)Session["favoritos"];
+            listaFav.Add((Articulo)Session["enDetalle"]);
+            Session.Add("favoritos", listaFav);
         }
     }
 }
