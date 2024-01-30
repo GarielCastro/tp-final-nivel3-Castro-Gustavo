@@ -14,6 +14,7 @@ namespace catalogoWeb
         public bool ConfirmaEliminacion { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            txtId.Enabled = false;
             try
             {
                 if (!IsPostBack)
@@ -62,7 +63,7 @@ namespace catalogoWeb
 
         }
 
-        protected void txtImagenrl_TextChanged(object sender, EventArgs e)
+         protected void txtImagenrl_TextChanged(object sender, EventArgs e)
         {
             imgArticulo.ImageUrl = txtImagenrl.Text;
         }
@@ -76,11 +77,12 @@ namespace catalogoWeb
                 nuevo.Codigo = txtCodigo.Text;
                 nuevo.Nombre = txtNombre.Text;
                 nuevo.Descripcion = txtDescripcion.Text;
-                nuevo.UrlImagen = txtImagenrl.Text;
                 nuevo.Marca = new Marca();
                 nuevo.Marca.Id = int.Parse(ddlMarca.SelectedValue);
                 nuevo.Categoria = new Categoria();
                 nuevo.Categoria.Id = int.Parse(ddlCategoria.SelectedValue);
+                nuevo.UrlImagen = txtImagenrl.Text;
+                nuevo.Precio = int.Parse(txtPrecio.Text.ToString());
 
                 if (Request.QueryString["id"] != null)
                 {

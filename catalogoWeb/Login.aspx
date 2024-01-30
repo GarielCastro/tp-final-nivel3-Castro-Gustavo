@@ -14,7 +14,7 @@
             <asp:TextBox runat="server" ID="txtPassword" TextMode="Password" placeholder="*****" CssClass="form-control" />
         </div>
         <asp:Button Text="Ingresar" runat="server" ID="btnIngresar" OnClick="btnIngresar_Click" CssClass="btn btn-primary" />
-        <label class="form-label">Si no estas registrado, </label>
-        <asp:Button Text="Registrate" ID="btnRegistrarse" OnClick="btnRegistrarse_Click" runat="server" />
+        <label class="form-label">Si no estas registrado, puedes hacerlo desde el botón en la barra superior</label>
+        <%--<asp:Button Text="Registrate" ID="btnRegistrarse" OnClick="btnRegistrarse_Click" runat="server" />--%>
     </div>
 </asp:Content>

@@ -22,8 +22,8 @@ namespace catalogoWeb
                 {
                     Usuario user = (Usuario)Session["usuario"];
                     lblUser.Text = user.Correo;
-                    List<Articulo> favoritos = new List<Articulo>();
-                    Session.Add("favoritos", favoritos);
+                   // List<Articulo> favoritos = new List<Articulo>();
+                    //Session.Add("favoritos", favoritos);
                     if (Session["admin"] != null)
                     {
                         bool admin = (bool)Session["admin"];

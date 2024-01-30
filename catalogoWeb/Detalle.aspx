@@ -20,7 +20,7 @@
                 <asp:Label Text="Código" CssClass="form-label" ID="lblCodigo" Font-Size="XX-Large" runat="server" />
                 </div>
                 <div class="mb-3 row">
-                <asp:Label Text="Precio" CssClass="form-label" ID="lblPrecio" Font-Size="XX-Large" runat="server" />
+                <asp:Label Text="Precio" CssClass="form-label" ID="lblPrecio" Font-Size="XX-Large" runat="server" DataFormatString="{0:F2}" />
                 </div>
             </div>
             <div class="col-auto"

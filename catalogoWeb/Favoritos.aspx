@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Favoritos</h1>
+    <h2>Estos son tus faboritos</h2>
     <div>
         <asp:GridView ID="dgvFavoritos" CssClass="table" runat="server" AutoGenerateColumns="false" DataKeyNames="Id">
             <Columns>

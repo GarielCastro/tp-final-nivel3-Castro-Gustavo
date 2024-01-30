@@ -8,6 +8,10 @@
         <div class="col-6">
 
             <div class="mb-3">
+                <label for="txtId" class="form-label">Id: </label>
+                <asp:TextBox runat="server" ID="txtId" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
                 <label for="txtCodigo" class="form-label">Codigo: </label>
                 <asp:TextBox runat="server" ID="txtCodigo" CssClass="form-control" />
             </div>

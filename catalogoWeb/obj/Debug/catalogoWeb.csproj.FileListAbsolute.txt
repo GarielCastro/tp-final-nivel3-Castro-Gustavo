@@ -51,13 +51,13 @@ C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\roslyn\vbc.rsp
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\roslyn\VBCSCompiler.exe
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Modelo.dll
+C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Negocio.dll
+C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Modelo.pdb
+C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Negocio.pdb
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\obj\Debug\catalogoWeb.csproj.AssemblyReference.cache
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\obj\Debug\catalogoWeb.csproj.CoreCompileInputs.cache
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\obj\Debug\catalogoWeb.csproj.CopyComplete
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\obj\Debug\catalogoWeb.dll
 C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\obj\Debug\catalogoWeb.pdb
-C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Modelo.dll
-C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Negocio.dll
-C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Modelo.pdb
-C:\Users\acpc\source\repos\nivel_3\Catalogo-Web\catalogoWeb\bin\Negocio.pdb

@@ -11,7 +11,7 @@
             <Columns>
                 <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
                 <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
-                <asp:BoundField HeaderText="Precio en $" DataField="Precio" />
+                <asp:BoundField HeaderText="Precio en $" DataField="Precio" DataFormatString="{0:F2}"/>
                 <%--<asp:CommandField HeaderText="Edición" ShowSelectButton="true" SelectText="Modificar" />--%>
                 <asp:CommandField HeaderText="prueba" ShowSelectButton="true" SelectText="Editar" />
             </Columns>
